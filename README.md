@@ -1,9 +1,9 @@
 # toy-shell
-# Project #1 (Make Your Own Shell)
+## Project #1 (Make Your Own Shell)
 
-## OS: Ubuntu Linux
+### OS: Ubuntu Linux
 
-### I added a function to display host name, user name, cwd. I changed the color of each item and exit when entering "EXIT".
+### I added a function to display username, hostname, cwd(current working directory). I changed the ㅠletter backgroung color of each item and exit while loop when entering "exit".
 
 
     char hostname[LEN_HOSTNAME + 1];
@@ -17,6 +17,11 @@
     getcwd(cwd, sizeof(cwd));
     printf("\x1b[42mcwd\x1b[0m: %s\n", cwd);
 
+> Display username, hostname, cwd(current working directory)
+> Change letter background color username-> 46:하늘색, hostname-> 43:노란색, cwd-> 42:초록색 
 
+    if (!strcmp(args[0], "exit")) {
+		    break;
+	}
 
-
+> Exit While loop when entering "exit"
