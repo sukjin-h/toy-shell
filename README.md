@@ -18,7 +18,7 @@
     printf("\x1b[42mcwd\x1b[0m: %s\n", cwd);
 
 > Display username, hostname, cwd(current working directory)
-> Change letter background color username-> 46:하늘색, hostname-> 43:노란색, cwd-> 42:초록색 
+> Change letter background color username-> 46:Sky Blue, hostname-> 43:Yellow, cwd-> 42:Green 
 
     if (!strcmp(args[0], "exit")) {
 		    break;
