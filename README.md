@@ -1,9 +1,9 @@
 # toy-shell
 # Project #1 (Make Your Own Shell)
 
-# OS: Ubuntu Linux
+## OS: Ubuntu Linux
 
-# I added a function to display host name, user name, cwd. I changed the color of each item and exit when entering "EXIT".
+### I added a function to display host name, user name, cwd. I changed the color of each item and exit when entering "EXIT".
 
 
     char hostname[LEN_HOSTNAME + 1];
@@ -16,6 +16,7 @@
     char cwd[1024];
     getcwd(cwd, sizeof(cwd));
     printf("\x1b[42mcwd\x1b[0m: %s\n", cwd);
+
 
 
 
